@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f77c38fb30aca649f85e0e9338293ae5a3f904894d3e857a1959b5a31b34c73c
+
+name:           life-game
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/life-game#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable life-game
+  main-is: Main.hs
+  other-modules:
+      Conway
+      Paths_life_game
+  hs-source-dirs:
+      src
+  build-depends:
+      adjunctions
+    , base >=4.7 && <5
+    , comonad
+    , distributive
+    , vector
+  default-language: Haskell2010
